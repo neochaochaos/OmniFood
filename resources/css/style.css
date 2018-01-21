@@ -1,3 +1,4 @@
+/*--------SET UP---------*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,15 +11,24 @@ html {
     font-size: 20px;
     font-weight: 300;
     color: #555;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
 }
+
+
+.row {
+/*    width: 90%;*/
+    margin: 0 auto;
+}
+
+/*-------- HEADER---------*/
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/hero.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;
-}
+    overflow: auto;
+}   
 
 .hero-text-box {
     width: 80%;
@@ -27,6 +37,46 @@ header {
     position: absolute;
     transform: translate(50%, 50%);
 }
+
+.logo {
+    float: left;
+    height: 100px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.main-nav {
+    list-style: none;
+        margin-right: 10%;
+
+}
+
+.main-nav li:link,
+.main-nav li:visited {
+    display: inline-block;
+    margin-left: 20px;    
+    clear: both;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    margin: 60px 20px;
+    padding: 8px 0px;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+    transition: border-bottom  0.2s
+}
+
+/*--------HEADING---------*/
 
 h1 {
     margin: 0;
@@ -38,6 +88,7 @@ h1 {
     word-spacing: 1px;
     margin-bottom: 30px;
 }
+/*--------BUTTON---------*/
 
 .btn:link,
 .btn:visited {
