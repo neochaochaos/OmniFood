@@ -14,9 +14,11 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+section {
+    padding: 80px 0;
+}
 
 .row {
-/*    width: 90%;*/
     margin: 0 auto;
 }
 
@@ -78,15 +80,39 @@ header {
 
 /*--------HEADING---------*/
 
-h1 {
-    margin: 0;
-    color: #fff;
+h1, h2, h3 {
     font-weight: 300;
-    font-size: 240%;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+}
+
+h1 {
+    color: #fff;
     margin-bottom: 30px;
+    word-spacing: 1px;
+    font-size: 240%;
+}
+
+h2 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 180%;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    margin: 0 auto;
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 30px auto;
+}
+
+h3 {
+    font-size: 110%;
+    word-spacing: 1px;
+    margin-bottom: 5px;
 }
 /*--------BUTTON---------*/
 
@@ -126,6 +152,61 @@ h1 {
     background-color: #cf6d17;
     color: #fff;
 }
+
+/*--------Features-------*/
+.container {
+    display: grid;
+    grid-gap: 40px;
+    margin: 0 200px;
+}
+
+.feature-intro {
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+.feature1,
+.feature2, 
+.feature3,
+.feature4 {
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.feature1 {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.feature2 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.feature3 {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+.feature4 {
+    grid-column: 4 / 5;
+    grid-row: 2;
+}
+
+.feature-intro p {
+    margin: 0 100px;
+    line-height: 145%;
+}
+
+i {
+    display: block;
+    font-size: 400%;
+    color: #e67e22;
+    align-content: center;
+    text-align: center;
+}
+
+
 
 
 
