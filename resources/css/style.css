@@ -113,7 +113,7 @@ h2:after {
 h3 {
     font-size: 110%;
     word-spacing: 1px;
-    margin-bottom: 5px;
+    margin: 15px auto;
 }
 /*--------BUTTON---------*/
 
@@ -199,7 +199,7 @@ h3 {
     line-height: 145%;
 }
 
-i {
+.feature-icon {
     display: block;
     font-size: 400%;
     color: #e67e22;
@@ -245,14 +245,15 @@ i {
 
 /*---------SETPS----------*/
 
-
+.box {
+    padding: 1%;
+}
 .section-steps {
     background-color: #f4f4f4;
 }
 
 
 .steps-box:first-child {
-/*    padding-top: 3%;*/
     text-align: right;
     padding-right: 3%;
     margin-top: 30px;
@@ -301,3 +302,31 @@ i {
     margin-right: 10px;
 }
 
+/*-------cities-------*/
+.city-img {
+    width: 90%;
+    height: auto;
+}
+
+.city-icon {
+    font-size: 120%;
+    color: #e67e22;
+    text-align: left;
+    margin-right: 20px;
+}
+
+
+.city-twitter-link:link,
+.city-twitter-link:visited {
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.city-twitter-link:hover,
+.city-twitter-link:active {
+    color: #555;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
