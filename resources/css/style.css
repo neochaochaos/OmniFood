@@ -435,12 +435,6 @@ cite {
     font-size: 0.8em;
 }
 /*-------contact-------*/
-/*
-.section-contact {
-    position: absolute;
-}
-*/
-
 .contact-form {
     width: 60%;
     margin: 0 auto;
@@ -461,3 +455,67 @@ input[type=checkbox] {
 }
 *:focus {outline: none}
 
+/*-------footer-------*/
+footer {
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-icons {
+    list-style: none;
+    float: right;
+    font-size: 170%;
+}
+
+.footer-nav li,
+.footer-icons li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer-nav li:last-child,
+.footer-icons li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer-icons li a:link,
+.footer-icons li a:visited {
+    text-decoration: none;
+    padding: 10px;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.footer-icons li a:hover,
+.footer-icons li a:active {
+    color: #ddd;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.twitter-link:hover {
+    color: #55acee;
+}
+
+.facebook-link:hover {
+    color: #3b5999;
+}
+
+.googleplus-link:hover {
+    color: #dd4b39;
+}
+
+.instagram-link:hover {
+    color: #4c68d7;
+}
